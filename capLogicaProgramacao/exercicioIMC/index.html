@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IMC - Indice de Massa Corporal</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tebela IMC</h1>
+    <table>
+      <thead>
+          <tr>
+              <th align="left">IMC</th>
+              <th class = "classific" align="right">Classificação</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td align="left">Menor que 18,5</td>
+              <td class = "classific" align="right">Magreza</td>
+          </tr>
+          <tr>
+              <td align="left">Entre 18,5 e 24,9</td>
+              <td class = "classific" align="right">Normal</td>
+          </tr>
+          <tr>
+              <td align="left">Entre 25,0 e 29,9</td>
+              <td class = "classific" align="right">Sobrepeso</td>
+          </tr>
+          <tr>
+              <td align="left">Entre 30,0 e 39,9</td>
+              <td class = "classific" align="right">Obesidade</td>
+          </tr>
+          <tr>
+              <td align="left">Maior que 40,0</td>
+              <td class = "classific" align="right">Obesidade Grave</td>
+          </tr>
+      </tbody>
+  </table>
+
+  <form id="imcForm">
+  <div class="input-group">
+    <label for="peso">Peso</label>
+    <input type="text" name="peso" id="peso" required>
+  </div>
+  <div class="input-group">
+    <label for="altura">Altura</label>
+    <input type="text" name="altura" id="altura" required>
+  </div>
+  <button type="button" id="calcularBtn">Calcular</button>
+</form>
+  
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
